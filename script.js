@@ -3,6 +3,13 @@ function getComputerChoice() {
   return rockPaperScissors(random);
 }
 
+function getUsersChoice() {
+  let userInput = prompt(
+    'Enter your choice:\n1 - Rock\n2 - Paper\n3 - Scissors'
+  );
+  return rockPaperScissors(parseInt(userInput));
+}
+
 function rockPaperScissors(choice) {
   switch (choice) {
     case 1:
